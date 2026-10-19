@@ -3,7 +3,19 @@
   "version": "0.1.0",
   "description": "TMF645/TMF699-aligned New Connection & Sales microservice",
   "main": "server.js",
-  "scripts": {"start":"node server.js","dev":"nodemon server.js"},
-  "dependencies": {"dotenv":"^16.4.5","express":"^4.19.2","jsonwebtoken":"^9.0.2","mongoose":"^8.4.0"},
-  "devDependencies": {"nodemon":"^3.1.0"}
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.20.0",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
