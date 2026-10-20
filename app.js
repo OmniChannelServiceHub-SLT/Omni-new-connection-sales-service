@@ -6,6 +6,7 @@ const createCheckServiceRoutes = require("./src/APIs/createCheckService/routes/c
 const createResourceRoutes = require("./src/APIs/createResource/routes/createResourceRoutes");
 const listCityRoutes = require("./src/APIs/listCity/routes/listCityRoutes");
 const listProductOfferingConRoutes = require("./src/APIs/listProductOfferingCon/routes/listProductOfferingConRoutes");
+const createSalesLeadARoutes = require("./src/APIs/createSalesLeadA/routes/createSalesLeadARoutes");
 
 const app = express();
 
@@ -18,5 +19,6 @@ app.use("/tmf-api/serviceQualification/v4", createCheckServiceRoutes);
 app.use("/tmf-api/resourceActivation/v4", createResourceRoutes);
 app.use("/tmf-api/serviceQualification/v4", listCityRoutes);
 app.use("/tmf-api/productOffering/v4",listProductOfferingConRoutes);
+app.use("/tmf-api/salesManagement/v4",createSalesLeadARoutes);
 
 module.exports = app;
